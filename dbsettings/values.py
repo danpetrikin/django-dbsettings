@@ -193,7 +193,7 @@ class StringValue(Value):
 
 class TextValue(Value):
     unitialized_value = ''
-    field = forms.CharField
+    field = forms.TextField
 
     def to_python(self, value):
         return unicode(value)
